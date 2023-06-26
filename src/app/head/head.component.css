@@ -1,0 +1,12 @@
+.tagline {
+    color: #0f1c81;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: right;
+}
+@media (min-width: 992px) {
+.tagline {
+    margin-top: 20px;
+}
+}

@@ -1,0 +1,43 @@
+<ng-template #content1 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230405-214619.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+
+<section class="gallery min-vh-100">
+    <div class="container-lg">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+                <img alt="img1" (click)="openBackDropCustomClass(content1)" src ="assets/Screenshot_20230405-214619.png"  />
+            </div>
+            <div class="col">
+                <img src ="assets/Screenshot_20230405-214741.png"      alt="img2"/>
+            </div>
+            <div class="col">
+                <img src ="assets/Screenshot_20230405-220539.png"   alt="img3"/>
+            </div>
+            <div class="col">
+                <img src ="assets/Screenshot_20230414-231714.png"     alt="img4"/>
+            </div>
+            <div class="col">
+                <img src ="assets/Screenshot_20230414-231409.png"  alt="img5"/>
+            </div>
+            <div class="col">
+                <img src ="assets/Screenshot_20230414-231521.png"     alt="img6"/>
+            </div>
+        </div>
+    </div>
+  
+
+
+    
+<!-- Modal -->
+
+  
