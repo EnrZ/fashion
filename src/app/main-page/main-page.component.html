@@ -10,27 +10,178 @@
 	</div>
 </ng-template>
 
+<ng-template #content2 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230405-214741.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content3 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230405-220539.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content4 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230415-000439.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content5 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230414-231409.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content6 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230414-231521.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content7 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230414-232953.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content8 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230414-231714.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content9 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230415-000212.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content10 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230415-000656.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content11 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230415-002036.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<ng-template #content12 let-modal>
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<img src ="assets/Screenshot_20230415-002218.png">
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+	</div>
+</ng-template>
 
 <section class="gallery min-vh-100">
     <div class="container-lg">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <p>Click images to get a better look</p>
+        <!-- row-cols-2 for smallest screens, 2 columns of images in mobile-->
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
             <div class="col">
-                <img alt="img1" (click)="openBackDropCustomClass(content1)" src ="assets/Screenshot_20230405-214619.png"  />
+                <img alt="img1" (click)="openLg(content1)" src ="assets/Screenshot_20230405-214619.png"  />
             </div>
             <div class="col">
-                <img src ="assets/Screenshot_20230405-214741.png"      alt="img2"/>
+                <img (click)="openLg(content2)" src ="assets/Screenshot_20230405-214741.png"      alt="img2"/>
             </div>
             <div class="col">
-                <img src ="assets/Screenshot_20230405-220539.png"   alt="img3"/>
+                <img (click)="openLg(content3)" src ="assets/Screenshot_20230405-220539.png"   alt="img3"/>
             </div>
             <div class="col">
-                <img src ="assets/Screenshot_20230414-231714.png"     alt="img4"/>
+                <img (click)="openLg(content4)" src ="assets/Screenshot_20230415-000439.png"     alt="img4"/>
             </div>
             <div class="col">
-                <img src ="assets/Screenshot_20230414-231409.png"  alt="img5"/>
+                <img (click)="openLg(content5)" src ="assets/Screenshot_20230414-231409.png"  alt="img5"/>
             </div>
             <div class="col">
-                <img src ="assets/Screenshot_20230414-231521.png"     alt="img6"/>
+                <img (click)="openLg(content6)" src ="assets/Screenshot_20230414-231521.png"     alt="img6"/>
+            </div>
+            <div class="col">
+                <img (click)="openLg(content7)" src ="assets/Screenshot_20230414-232953.png"     alt="img7"/>
+            </div>
+            <div class="col">
+                <img (click)="openLg(content8)" src ="assets/Screenshot_20230414-231714.png"     alt="img8"/>
+            </div>
+            <div class="col">
+                <img (click)="openLg(content9)" src ="assets/Screenshot_20230415-000212.png"     alt="img8"/>
+            </div>
+            <div class="col">
+                <img (click)="openLg(content10)" src ="assets/Screenshot_20230415-000656.png"     alt="img8"/>
+            </div>
+            <div class="col">
+                <img (click)="openLg(content11)" src ="assets/Screenshot_20230415-002036.png"     alt="img8"/>
+            </div>
+            <div class="col">
+                <img (click)="openLg(content12)" src ="assets/Screenshot_20230415-002218.png"     alt="img8"/>
             </div>
         </div>
     </div>

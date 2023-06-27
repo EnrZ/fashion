@@ -1,6 +1,7 @@
 img{
     max-width:100%;
     cursor:pointer;
+    border-style:solid; border-color:black;
 }
 
 .gallery{
