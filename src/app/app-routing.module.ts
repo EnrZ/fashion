@@ -9,8 +9,7 @@ const routes: Routes = [
 
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
+//this change has tobe made for routing to work with angular and ghpages
+@NgModule({ imports: [RouterModule.forRoot(routes,{ useHash: true})], exports: [RouterModule], })
+
 export class AppRoutingModule { }
