@@ -1,5 +1,5 @@
 .tagline {
-    color: #0f1c81;
+    color: #EEC051;
     font-style: italic;
     font-weight: bold;
     margin-top: 5px;
@@ -9,4 +9,13 @@
 .tagline {
     margin-top: 20px;
 }
+}
+
+.header{
+    background-color: #363636;
+}
+
+img{
+    height:200px;
+    width:200px;
 }
